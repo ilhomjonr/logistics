@@ -1,0 +1,154 @@
+@font-face {
+  font-family: "inter";
+  src: url(../fonts/Inter/static/Inter-Regular.ttf);
+}
+@font-face {
+  font-family: "mont";
+  src: url(../fonts/Montserrat/static/Montserrat-Medium.ttf);
+}
+.about_cont {
+  background-color: #0b0c0e;
+  padding: 60px;
+  border-radius: 40px;
+}
+.abh {
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 32px;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+.lefth1,
+.lefth1red {
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 88px;
+  color: white;
+}
+.lefth1red {
+  color: red;
+}
+.aboutdesc > p {
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  color: white;
+  max-width: 815px;
+  margin-top: 20px;
+}
+.abboth {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ab_num {
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+
+  color: #e74011;
+}
+.ab_numw {
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 48px;
+  margin-right: 5px;
+}
+.numdesc {
+  color: white;
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 32px;
+}
+.pxs {
+  max-width: 190px;
+}
+.pxs1 {
+  max-width: 270px;
+}
+@media only screen and (max-width: 425px) {
+  .about_cont {
+    padding: 16px;
+    background-color: black;
+  }
+  .abboth {
+    flex-direction: column;
+  }
+  .lefth1,
+  .lefth1red {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .abh {
+    font-size: 12px;
+    line-height: 32px;
+  }
+  .aboutdesc > p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .about_right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .ab_num {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .numdesc {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .about_rnum {
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .about_cont {
+    padding: 16px;
+    background-color: black;
+  }
+  .lefth1,
+  .lefth1red {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .abh {
+    font-size: 12px;
+    line-height: 32px;
+  }
+  .aboutdesc > p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .about_right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .ab_num {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .numdesc {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .about_rnum {
+    margin-right: 10px;
+  }
+}

@@ -1,0 +1,241 @@
+@font-face {
+  font-family: "inter";
+  src: url(../fonts/Inter/static/Inter-Regular.ttf);
+}
+@font-face {
+  font-family: "interbold";
+  src: url(../fonts/Inter/static/Inter-Bold.ttf);
+}
+@font-face {
+  font-family: "mont";
+  src: url(../fonts/Montserrat/static/Montserrat-Regular.ttf);
+}
+.examplee {
+  width: 400px;
+  height: 300px;
+  background-color: aqua;
+}
+.hlca {
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 32px;
+  color: white;
+}
+.head_ca {
+  font-family: "interbold";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 80px;
+  line-height: 88px;
+  color: white;
+}
+
+.head_ca > span {
+  color: red;
+}
+.head_cadesc {
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: white;
+}
+.career {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 0.9fr 0.4fr;
+}
+.joinca {
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: white;
+  background-color: #e74011;
+  padding: 16px 80px;
+  border-radius: 12px;
+  gap: 10px;
+  margin: 30px 0;
+}
+.right_ca {
+  position: relative;
+  z-index: -1;
+}
+.right_ca > img {
+  width: 100%;
+  height: 100%;
+}
+.alll {
+  position: absolute;
+  left: 40px;
+  bottom: 40px;
+  padding: 15px 30px;
+  background: #0b0c0e;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+.numcareer {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  color: #e74011;
+}
+.caright {
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  max-width: 200px;
+  color: #ffffff;
+}
+.imgcla {
+  width: 190px;
+  height: 200px;
+}
+.imgcla > img {
+  width: 100%;
+  height: 100%;
+}
+.ceocar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0b0c0e;
+  border-radius: 40px;
+  padding: 20px;
+  margin-top: 100px;
+}
+.lfbtr {
+  margin-left: 20px;
+}
+.namecare {
+  font-family: "interbold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+.carejob {
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+.carejobdesc {
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #c2c2c3;
+}
+.career_mobile {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .career {
+    display: none;
+  }
+  .career_mobile {
+    display: block;
+  }
+  .hlca {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 32px;
+    letter-spacing: 0.04em;
+    margin-bottom: 14px;
+  }
+  .head_ca {
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 32px;
+  }
+
+  .head_cadesc {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 32px;
+    margin-top: 32px;
+  }
+
+  .joinca {
+    width: 100%;
+    border-radius: 12px;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 16px 30px;
+    gap: 10px;
+  }
+  .right_ca {
+    position: relative;
+    z-index: -1;
+  }
+  .alll {
+    position: absolute;
+    margin-bottom: 24px;
+    margin: 0 24px;
+    padding: 13px 19px;
+    left: 0;
+    background: #0b0c0e;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+  }
+  .numcare {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .caright {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .ceocar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0b0c0e;
+    border-radius: 24px;
+    padding: 20px 18px;
+    margin: auto;
+  }
+  .lfbtr {
+    margin-left: 0;
+  }
+  .namecare {
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 8px;
+    margin-top: 30px;
+  }
+  .carejob {
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 20px;
+  }
+  .carejobdesc {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
