@@ -14,10 +14,10 @@ hamburgers?.addEventListener("click", () => {
 const menu = document.querySelectorAll(".r_top");
 const desc = document.querySelectorAll(".serv_desc");
 
-menu?.addEventListener("click", () => {
-  desc.classList.toggle("show");
-  console.log("helo");
-  for (let num = 0; num < number.length; num++) {
-    console.log("hello");
-  }
-});
+// menu?.addEventListener("click", () => {
+//   desc.classList.toggle("show");
+//   console.log("helo");
+//   for (let num = 0; num < number.length; num++) {
+//     console.log("hello");
+//   }
+// });
