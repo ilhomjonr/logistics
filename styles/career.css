@@ -46,7 +46,7 @@
 .career {
   display: grid;
   justify-content: space-between;
-  grid-template-columns: 0.9fr 0.4fr;
+  grid-template-columns: 0.7fr 0.4fr;
 }
 .joinca {
   font-family: "inter";
@@ -80,6 +80,9 @@
   align-items: center;
   justify-content: center;
   gap: 18px;
+}
+.left_ca {
+  margin-right: 24px;
 }
 .numcareer {
   font-family: "Inter";
