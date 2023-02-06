@@ -3,6 +3,10 @@
   src: url(../fonts/Inter/static/Inter-Regular.ttf);
 }
 @font-face {
+  font-family: "interbold";
+  src: url(../fonts/Inter/static/Inter-Bold.ttf);
+}
+@font-face {
   font-family: "mont";
   src: url(../fonts/Montserrat/static/Montserrat-Medium.ttf);
 }
@@ -19,7 +23,7 @@
 }
 .header_s,
 .header_sred {
-  font-family: "inter";
+  font-family: "interbold";
   font-style: normal;
   color: white;
   font-weight: 800;
@@ -27,7 +31,7 @@
   line-height: 88px;
 }
 .header_sred {
-  color: red;
+  color: #e74011;
 }
 .operate_s {
   color: white;
@@ -40,22 +44,25 @@
   margin-bottom: 40px;
 }
 .service_left {
-  width: 586px;
-  height: 706px;
+  width: 100%;
   border-radius: 40px;
-  background-color: aqua;
 }
 .service_left > img {
   width: 100%;
   height: 100%;
 }
-.service_bottom {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+.service_right {
+  width: 100%;
 }
+.accordion-button:not(.collapsed) {
+  box-shadow: unset !important;
+}
+.accordion {
+  --bs-accordion-bg: unset !important;
+}
+
 .trp {
-  font-family: "inter";
+  font-family: "interbold";
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
@@ -84,6 +91,83 @@
 }
 .show {
   display: block;
+}
+.service_bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 24px;
+}
+.accordion-button::after {
+  display: none;
+}
+.accordionhe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+}
+.accordion-body {
+  font-family: "inter" !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 18px !important;
+  line-height: 32px !important;
+}
+.accordion-button {
+  background-color: black !important;
+  display: flex;
+  color: white !important;
+  justify-content: space-between;
+  align-items: center;
+  border: none !important;
+  border-color: none;
+
+  font-family: "interbold" !important ;
+  font-style: normal !important;
+  font-weight: 800 !important;
+  font-size: 32px !important;
+  line-height: 48px !important;
+}
+.accordion-button:not(.collapsed) {
+  color: black;
+  box-shadow: none;
+}
+.accordion-item {
+  border: unset !important;
+}
+
+.accordion-button.collapsed svg {
+  transform: rotate(0deg);
+}
+.accordion-button svg {
+  transform: rotate(90deg);
+  transition: 0.3s;
+}
+.accordion-button:focus {
+  box-shadow: none !important;
+  color: white !important;
+}
+.accordion-body {
+  background-color: black !important;
+  color: white !important;
+}
+@media (max-width: 768px) {
+  .service_bottom {
+    display: block;
+    gap: 24px;
+  }
+  .accordion-body {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+  .accordion-button {
+    font-size: 24px !important;
+    line-height: 32px !important;
+  }
+  .accordion-button > svg {
+    width: 24px !important;
+    height: 24px !important;
+  }
 }
 @media only screen and (max-width: 1024px) {
   .header_s,

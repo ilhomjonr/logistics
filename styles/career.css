@@ -33,7 +33,7 @@
 }
 
 .head_ca > span {
-  color: red;
+  color: #e74011;
 }
 .head_cadesc {
   font-family: "inter";
@@ -60,6 +60,7 @@
   border-radius: 12px;
   gap: 10px;
   margin: 30px 0;
+  border: unset;
 }
 .right_ca {
   position: relative;
@@ -68,6 +69,8 @@
 .right_ca > img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
 .alll {
   position: absolute;
@@ -152,6 +155,13 @@
 .career_mobile {
   display: none;
 }
+@media only screen and (max-width: 1024px) {
+  .head_ca {
+    font-size: 60px;
+    line-height: 68px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .career {
     display: none;
@@ -240,5 +250,8 @@
   .carejobdesc {
     font-size: 14px;
     line-height: 20px;
+  }
+  .left_ca {
+    margin-right: 0;
   }
 }

@@ -6,6 +6,10 @@
   font-family: "mont";
   src: url(../fonts/Montserrat/static/Montserrat-Medium.ttf);
 }
+@font-face {
+  font-family: "interbold";
+  src: url(../fonts/Inter/static/Inter-Bold.ttf);
+}
 .about_cont {
   background-color: #0b0c0e;
   padding: 60px;
@@ -22,7 +26,7 @@
 }
 .lefth1,
 .lefth1red {
-  font-family: "inter";
+  font-family: "interbold";
   font-style: normal;
   font-weight: 800;
   font-size: 80px;
@@ -30,7 +34,7 @@
   color: white;
 }
 .lefth1red {
-  color: red;
+  color: #e74011;
 }
 .aboutdesc > p {
   font-family: "inter";
@@ -48,7 +52,7 @@
   align-items: center;
 }
 .ab_num {
-  font-family: "inter";
+  font-family: "interbold";
   font-style: normal;
   font-weight: 600;
   font-size: 40px;
