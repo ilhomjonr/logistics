@@ -46,7 +46,7 @@
 .career {
   display: grid;
   justify-content: space-between;
-  grid-template-columns: 0.7fr 0.4fr;
+  grid-template-columns: 0.6fr 0.4fr;
 }
 .joinca {
   font-family: "inter";
@@ -65,10 +65,27 @@
 .right_ca {
   position: relative;
   z-index: -1;
+  max-width: 586px;
+}
+
+.right_cas {
+  position: relative;
+  z-index: -1;
 }
 .right_ca > img {
   width: 100%;
   height: 100%;
+  border-radius: 40px;
+
+  object-fit: cover;
+  z-index: -1;
+}
+
+.right_cas > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+
   object-fit: cover;
   z-index: -1;
 }
@@ -155,6 +172,9 @@
 .career_mobile {
   display: none;
 }
+.accordion-button:hover {
+  z-index: 0 !important;
+}
 @media only screen and (max-width: 1024px) {
   .head_ca {
     font-size: 60px;
@@ -198,6 +218,10 @@
     gap: 10px;
   }
   .right_ca {
+    position: relative;
+    z-index: -1;
+  }
+  .right_cas {
     position: relative;
     z-index: -1;
   }

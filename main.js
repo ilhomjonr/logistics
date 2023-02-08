@@ -9,6 +9,13 @@
 const hamburgers = document.querySelector(".hamburger");
 const menus = document.querySelector(".mobile");
 hamburgers?.addEventListener("click", () => {
+  hamburgers.classList.toggle("show");
+  menus.classList.toggle("show");
+});
+const btns = document.querySelector(".hamburgercontent");
+
+btns?.addEventListener("click", () => {
+  hamburgers.classList.toggle("show");
   menus.classList.toggle("show");
 });
 const menu = document.querySelectorAll(".r_top");

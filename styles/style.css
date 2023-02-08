@@ -21,7 +21,7 @@ body {
 }
 
 header {
-  z-index: 1;
+  z-index: 99;
 }
 .scontainer {
   padding: 150px 30px 0 30px;
@@ -43,7 +43,7 @@ section {
   position: fixed;
   width: 100%;
   background-color: black;
-  padding-block: 24px;
+  padding: 30px 15px;
   z-index: 1;
 }
 .containernav {
@@ -100,6 +100,10 @@ section {
   height: 18px;
   color: white;
 }
+.langcont:hover .langhover > svg {
+  transform: rotate(180deg);
+  transition: 0.2s;
+}
 .langcont:hover .langchanger {
   display: block;
 }
@@ -132,9 +136,11 @@ section {
   gap: 3px;
 }
 .hamburgerline {
+  display: block;
   height: 3px;
   width: 22px;
   background-color: white;
+  transition: 0.4s;
 }
 
 .hamburgercontent {
@@ -186,6 +192,7 @@ section {
 .mobile {
   margin-top: 50px;
   display: none;
+  min-height: 100vh;
 }
 .show {
   display: block;
@@ -254,6 +261,7 @@ section {
 
 .mobilehero {
   display: none;
+  padding-top: 70px;
 }
 .hero_m {
   display: flex;
@@ -276,8 +284,12 @@ section {
 .hero2_m {
   max-width: 350px;
   height: 210px;
+  margin: 10px 0;
 
   border-radius: 24px;
+}
+hero_left_m {
+  margin: 30px 0;
 }
 .hero2_m > img {
   width: 100%;
@@ -319,13 +331,25 @@ section {
     margin-top: 20px;
   }
 }
-@media only screen and (max-width: 768px) {
+@media (max-width: 766px) {
   .mobilehero {
     display: block;
   }
   .lgscreenhero {
     display: none;
   }
+}
+@media only screen and (max-width: 768px) {
+  .hamburger.show .hamburgerline:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.show .hamburgerline:nth-child(1) {
+    transform: translateY(4px) rotate(45deg);
+  }
+  .hamburger.show .hamburgerline:nth-child(3) {
+    transform: translateY(-2px) rotate(-45deg);
+  }
+
   .hamburger_div {
     display: block;
   }
@@ -378,6 +402,9 @@ section {
   .scontainer {
     padding: 25px 16px;
     margin-bottom: 0;
+  }
+  .langchanger {
+    right: 20%;
   }
 }
 
