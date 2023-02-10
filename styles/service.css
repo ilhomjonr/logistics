@@ -19,7 +19,7 @@
   letter-spacing: 0.04em;
   text-align: left;
   color: white;
-  margin-bottom: 8px;
+  margin-bottom: 8px !important;
 }
 .header_s,
 .header_sred {
@@ -41,7 +41,7 @@
   font-size: 18px;
   line-height: 32px;
   margin-top: 10px;
-  margin-bottom: 40px;
+  margin-bottom: 40px !important;
 }
 .service_left {
   width: 100%;
@@ -111,6 +111,10 @@
   font-weight: 400 !important;
   font-size: 18px !important;
   line-height: 32px !important;
+  padding: 24px 0 !important;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 .accordion-button {
   background-color: black !important;
@@ -126,6 +130,7 @@
   font-weight: 800 !important;
   font-size: 32px !important;
   line-height: 48px !important;
+  padding: 0 !important;
 }
 .accordion-button:not(.collapsed) {
   color: black;
@@ -179,10 +184,12 @@
   .operate_s {
     font-size: 16px;
     line-height: 24px;
+    margin-bottom: 32px !important;
   }
   .sh {
     font-size: 12px;
     line-height: 32px;
+    margin-bottom: 14px !important;
   }
 
   .service_left {

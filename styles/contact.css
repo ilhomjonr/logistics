@@ -13,8 +13,7 @@
 .contact_cont {
   padding: 40px;
   display: flex;
-  flex: 1 1 auto;
-
+  gap: 70px;
   background: #0b0c0e;
   border-radius: 40px;
 }
@@ -48,6 +47,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 32px;
+  margin-top: 30px;
   /* or 178% */
 
   /* White */
@@ -125,14 +125,19 @@
 @media (max-width: 1024px) {
   .contacth,
   .contacth > span {
-    font-size: 45px;
-    line-height: 52px;
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .contact_cont {
+    padding: 24px 18px;
+    gap: 30px;
   }
 }
 @media (max-width: 768px) {
   .contact_cont {
     flex-direction: column;
     padding: 24px 18px;
+    gap: 30px;
   }
 
   .contacth,
@@ -152,8 +157,12 @@
   .formcontact > input {
     width: 100%;
     margin-right: 0;
+    margin-bottom: 16px;
   }
   .formcontact {
     gap: 0;
+  }
+  .send {
+    margin-top: 8px;
   }
 }

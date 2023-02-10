@@ -13,6 +13,7 @@
 
 .locat_container {
   display: flex;
+  gap: 100px;
 
   background: #0b0c0e;
   border-radius: 40px;
@@ -57,7 +58,7 @@
   font-size: 14px;
   line-height: 17px;
   /* identical to box height */
-
+  margin-bottom: 8px !important;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
@@ -83,6 +84,7 @@
   display: grid;
   grid-template-columns: auto auto;
   margin-top: 30px;
+  gap: 30px;
 }
 .location_right {
   width: 100%;
@@ -94,8 +96,13 @@
 @media (max-width: 1024px) {
   .locationhead,
   .locationhead > span {
-    font-size: 60px;
-    line-height: 68px;
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .contat {
+    grid-template-columns: auto;
+    margin-top: 30px;
   }
 }
 
@@ -103,11 +110,13 @@
   .locat_container {
     flex-wrap: wrap;
     padding: 24px 18px;
+    gap: 30px;
   }
 
   .headl {
     font-size: 12px;
     line-height: 32px;
+    margin-bottom: 14px !important;
   }
   .locationhead,
   .locationhead > span {

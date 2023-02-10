@@ -42,6 +42,8 @@
   font-size: 18px;
   line-height: 32px;
   color: white;
+  margin-top: 32px !important;
+  margin-bottom: 32px !important;
 }
 .career {
   display: grid;
@@ -159,6 +161,7 @@
   letter-spacing: 0.04em;
   color: #ffffff;
   margin-bottom: 30px;
+  margin: 16px 0 32px 0 !important;
 }
 .carejobdesc {
   font-family: "inter";
@@ -177,8 +180,8 @@
 }
 @media only screen and (max-width: 1024px) {
   .head_ca {
-    font-size: 60px;
-    line-height: 68px;
+    font-size: 28px;
+    line-height: 32px;
   }
 }
 
@@ -194,18 +197,18 @@
     font-size: 12px;
     line-height: 32px;
     letter-spacing: 0.04em;
-    margin-bottom: 14px;
+    margin-bottom: 14px !important;
   }
   .head_ca {
     font-size: 28px;
     line-height: 32px;
-    margin-bottom: 32px;
+    margin-bottom: 32px !important;
   }
 
   .head_cadesc {
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 32px;
+    margin-bottom: 32px !important;
     margin-top: 32px;
   }
 
@@ -269,7 +272,7 @@
   .carejob {
     font-size: 14px;
     line-height: 17px;
-    margin-bottom: 20px;
+    margin-bottom: 20px !important;
   }
   .carejobdesc {
     font-size: 14px;

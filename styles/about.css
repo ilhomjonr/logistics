@@ -16,7 +16,7 @@
   border-radius: 40px;
 }
 .abh {
-  font-family: "inter";
+  font-family: "interbold";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -57,7 +57,7 @@
   font-weight: 600;
   font-size: 40px;
   line-height: 48px;
-
+  margin-bottom: 18px !important;
   color: #e74011;
 }
 .ab_numw {
@@ -82,7 +82,17 @@
 .pxs1 {
   max-width: 270px;
 }
+.about_right {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
 @media only screen and (max-width: 425px) {
+  .about_right {
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+  }
   .about_cont {
     padding: 16px;
     background-color: black;
@@ -111,6 +121,7 @@
   .ab_num {
     font-size: 28px;
     line-height: 32px;
+    margin-bottom: 8px !important;
   }
   .numdesc {
     font-size: 16px;
