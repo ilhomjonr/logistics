@@ -12,7 +12,7 @@
 }
 
 .sh {
-  font-family: "inter";
+  font-family: "interbold";
   font-size: 14px;
   font-weight: 600;
   line-height: 32px;
@@ -171,7 +171,7 @@
     line-height: 32px !important;
   }
   .accordion-button > svg {
-    width: 24px !important;
+    max-width: 24px !important;
     height: 24px !important;
   }
 }

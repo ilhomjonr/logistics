@@ -18,6 +18,50 @@ btns?.addEventListener("click", () => {
   hamburgers.classList.toggle("show");
   menus.classList.toggle("show");
 });
+const aboutRef = document.querySelector(".about");
+const servicesRef = document.querySelector(".about");
+const recruitingRef = document.querySelector(".about");
+const contactRef = document.querySelector(".about");
+const scrollFunction = () => {
+  let top = window.pageYOffset;
+
+  if (top >= 5) {
+    setIsScrolled(true);
+  } else {
+    setIsScrolled(false);
+  }
+
+  if (window.innerWidth >= 880) {
+    if (top >= aboutRef.current.offsetTop - 100) {
+      setIsAboutActive(true);
+    } else {
+      setIsAboutActive(false);
+    }
+    if (top >= servicesRef.current.offsetTop - 100) {
+      setIsAboutActive(false);
+      setIsContactActive(false);
+      setIsRecruitingActive(false);
+      setIsServicesActive(true);
+    } else {
+      setIsServicesActive(false);
+    }
+    if (top >= recruitingRef.current.offsetTop - 100) {
+      setIsAboutActive(false);
+      setIsContactActive(false);
+      setIsServicesActive(false);
+      setIsRecruitingActive(true);
+    } else {
+      setIsRecruitingActive(false);
+    }
+    if (top >= contactRef.current.offsetTop - 100) {
+      setIsAboutActive(false);
+      setIsRecruitingActive(false);
+      setIsContactActive(true);
+    } else {
+      setIsContactActive(false);
+    }
+  }
+};
 
 const sections = document.querySelectorAll("section[id]");
 

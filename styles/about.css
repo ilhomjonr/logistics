@@ -112,6 +112,7 @@
   .aboutdesc > p {
     font-size: 16px;
     line-height: 24px;
+    margin-bottom: 20px !important;
   }
   .about_right {
     display: flex;
